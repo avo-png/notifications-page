@@ -35,6 +35,10 @@ section {
     border-radius: 5px;
 }
 
+section.read {
+    background-color: #fff;
+}
+
 main {
     width: 100%;
     display: inline-flex;
