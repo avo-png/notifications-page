@@ -9,3 +9,15 @@ nextStep.addEventListener('click', function (e) {
   // Show thank you message element
   document.getElementById('completed').style.display = 'block';
 });
+
+// color change for buttons
+$(".unread").on('click', function () {
+    var x = $(this).attr('class');
+    if (x == 'unread') {
+        $(this).removeClass("unread");
+        $(this).addClass("read");
+    } else {
+        $(this).removeClass("read");
+        $(this).addClass("unread");
+    }
+});

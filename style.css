@@ -31,9 +31,12 @@ section {
     width: 97%;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: hsl(211, 68%, 94%);
     padding: 10px;
     border-radius: 5px;
+}
+
+section.unread {
+    background-color: hsl(211, 68%, 94%);
 }
 
 section.read {
