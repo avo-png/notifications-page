@@ -23,18 +23,33 @@
 // });
 
 // color change for button another try
-function colorchange() {
-    document.getElementsById("unreade").style.backgroundColor = "red";
-}
+// function colorChange() {
+//     document.getElementsById("unreade").style.backgroundColor = "red";
+// }
 
 // updates
-// var nextStep = document.querySelector('#nextStep');
+var changeColors = document.querySelector('#mButton');
 
-// nextStep.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   // Hide first view
-//   document.getElementById('form').style.display = 'none';
+changeColors.addEventListener('click', function (e) {
+  e.preventDefault();
+  // change to white
+  document.getElementById('unread').style.display = 'none';
 
-//   // Show thank you message element
-//   document.getElementById('completed').style.display = 'block';
-// });
+  // change to red
+  document.getElementById('read').style.display = 'block';
+});
+
+// function colorchange(id)
+// {
+//   var background = document.getElementById(id).style.backgroundColor;
+
+//   if(background == "rgb(255, 145, 0)")
+//   {
+//   document.getElementById(id).style.backgroundColor = "rgb(26,255,0)";
+//   }
+//   if(background == "rgb(26, 255, 0)")
+//   {
+//     document.getElementById(id).style.backgroundColor = "rgb(255,145,0)";
+//   }
+
+// }
