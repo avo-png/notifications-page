@@ -33,10 +33,10 @@ var changeColors = document.querySelector('#mButton');
 changeColors.addEventListener('click', function (e) {
   e.preventDefault();
   // change to white
-  document.getElementById('unread').style.display = 'none';
+  document.getElementById('unread').backgroundColor = 'rgb(26,255,0)';
 
   // change to red
-  document.getElementById('read').style.display = 'block';
+  document.getElementById('read').style.backgroundColor = 'rgb(255,145,0)';
 });
 
 // function colorchange(id)
