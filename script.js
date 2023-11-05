@@ -23,18 +23,18 @@
 // });
 
 // color change for button another try
-// function colorchange() {
-//     document.getElementsById("unreade").style.backgroundColor = "red";
-// }
+function colorchange() {
+    document.getElementsById("unreade").style.backgroundColor = "red";
+}
 
 // updates
-var nextStep = document.querySelector('#nextStep');
+// var nextStep = document.querySelector('#nextStep');
 
-nextStep.addEventListener('click', function (e) {
-  e.preventDefault();
-  // Hide first view
-  document.getElementById('form').style.display = 'none';
+// nextStep.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   // Hide first view
+//   document.getElementById('form').style.display = 'none';
 
-  // Show thank you message element
-  document.getElementById('completed').style.display = 'block';
-});
+//   // Show thank you message element
+//   document.getElementById('completed').style.display = 'block';
+// });
