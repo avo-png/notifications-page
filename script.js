@@ -10,34 +10,30 @@
 //   document.getElementById('completed').style.display = 'block';
 // });
 
-// color change for buttons
-// $(".unread").on('click', function () {
-//     var x = $(this).attr('class');
-//     if (x == 'unread') {
-//         $(this).removeClass("unread");
-//         $(this).addClass("read");
-//     } else {
-//         $(this).removeClass("read");
-//         $(this).addClass("unread");
-//     }
-// });
+// color change for each thing
+$(".unread").on('click', function () {
+    var x = $(this).attr('class');
+    if (x == 'unread') {
+        $(this).removeClass("unread");
+        $(this).addClass("read");
+    } else {
+        $(this).removeClass("read");
+        $(this).addClass("unread");
+    }
+});
 
-// color change for button another try
-// function colorChange() {
-//     document.getElementsById("unreade").style.backgroundColor = "red";
-// }
 
 // updates
-var changeColors = document.querySelector('#mButton');
+// var changeColors = document.querySelector('#mButton');
 
-changeColors.addEventListener('click', function (e) {
-  e.preventDefault();
-  // change to white
-  document.getElementById('unread').backgroundColor = 'rgb(26,255,0)';
+// changeColors.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   // change to white
+//   document.getElementById('unread').backgroundColor = 'rgb(26,255,0)';
 
-  // change to red
-  document.getElementById('read').style.backgroundColor = 'rgb(255,145,0)';
-});
+//   // change to red
+//   document.getElementById('unread').style.backgroundColor = 'rgb(255,145,0)';
+// });
 
 // function colorchange(id)
 // {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
     <title>Notifications Page</title>
@@ -10,7 +11,7 @@
 <body>
     <header>
         Notifications
-        <button id="mButton" type="Submit" onClick="colorChange()">Confirm</button>
+        <button class="all-button" id="allButton" type="Submit">Confirm</button>
         <!-- <input type="button" class="button" name="select" value="select" id="otherButton" /> -->
     </header>
     <main>
@@ -33,7 +34,7 @@
             <img src="images/avatar-rizky-hasanuddin.webp" alt="">
             <p class="who-notification"><span style="font-weight: bold">Rizky Hasanuddin</span> sent you a private message</p>
             <p class="time-ago">5 days ago</p>
-            <p class="message" onclick="">Hello, thanks for setting up the chess club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+            <p class="message unread">Hello, thanks for setting up the chess club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
         </section>
         <section class="read">
             <img src="images/avatar-kimberly-smith.webp" alt="">
