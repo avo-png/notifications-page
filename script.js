@@ -10,31 +10,30 @@ $(".unread").on('click', function () {
     }
 });
 
-// change colors on all when click button
-// $(".all-button").on('click', function () {
-//     var y = 
-//     if (x == 'unread') {
-//         $(this).removeClass("unread");
-//         $(this).addClass("read");
-//     } else {
-//         $(this).removeClass("read");
-//         $(this).addClass("unread");
-//     }
-// });
+// let's see if this works for the colors
+const main = document.querySelector('#allButton');
+const ones = document.querySelectorAll('#notread');
+const updatedColor = '#fff';
+const originalColor = main.style.backgroundColor;
 
-// function changeColors() {
-//   var background = document.querySelectorAll('#umread').style.backgroundColor;
+main.addEventListener('click', function (e) {
+    updateColor(e.target);
+    ones.forEach( el => {
+      updateColor(el);
+    });
+});
 
-//   if(background == "hsl(211, 68%, 94%)")
-//   {
-//     document.querySelectorAll('#umread').style.backgroundColor = "rgb(26,255,0)";
-//   }
-//   if(background == "rgb(26, 255, 0)")
-//   {
-//     document.querySelectorAll('#umread').style.backgroundColor = "hsl(211, 68%, 94%)";
-//   }
-// }
+ones.forEach( el => {
+  el.addEventListener('click', function (e) {
+    updateColor(el);
+  });
+});
 
-// document.getElementById("allButton").addEventListener("click", function(){ 
-//     document.querySelectorAll("unread").style.backgroundColor = "black";
-// }); 
+// Update the element color based on the current color
+function updateColor(el) {
+  if (el.style.backgroundColor === originalColor) {
+    el.style.backgroundColor = updatedColor;
+  } else {
+    el.style.backgroundColor = originalColor;
+  }
+}

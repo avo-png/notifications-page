@@ -18,7 +18,7 @@ header button {
     background-color: #fff;
     border-radius: 8px;
     border-width: 0;
-    color: #333333;
+    color: hsl(219, 85%, 26%);
     font-size: 15px;
     font-weight: 500;
     padding: 10px 12px;
@@ -58,7 +58,7 @@ p.message {
     margin-left: 15%;
     padding: 30px;
     border-radius: 10px;
-    background-color: hsl(205, 33%, 90%);
+    background-color: hsl(211, 68%, 94%);
 }
 
 img {
